@@ -1,0 +1,130 @@
+:root{
+    --dark-blue: #0A3871;
+    --ligth-blue: #d8dfe8;
+    --main-color: #f3f5fc;
+    --inter-font: "Inter", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--main-color);
+    font-family: var(--inter-font);
+}
+
+header{
+    margin-bottom: 5rem;
+    width: 60%;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+header img{
+    width: 120px;
+    height: 48px;
+}
+
+.form__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 87dvh;
+}
+
+.form__input{
+    width: 100%;
+    max-width: 577px;
+    height: 64dvh;
+    border-color: transparent;
+    outline: none;
+    background: transparent;
+    font-family: var(--inter-font);
+    font-size: 3.2rem;
+    color: var(--dark-blue);
+    margin-bottom: 3rem;
+    overflow: auto;
+   
+}
+
+::placeholder{
+    color: var(--dark-blue);
+}
+
+.alert__msj{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.submit__container{
+    display: flex;
+    gap: 2rem
+    
+  }
+
+.form__btn{
+    background: var(--dark-blue);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue)
+    
+}
+
+.form__btn--secundary{
+    background: var(--ligth-blue);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    color: var(--dark-blue);
+}
+
+.result{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 72dvh;
+    border-radius: 32px;
+    max-width: 40rem;
+    width: 100%;
+}
+
+.alert__img{
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    main{
+        flex-direction: column;
+    }
+    .result{
+        height: auto;
+        max-width: 624px;
+        margin-top: 2rem;
+    }
+
+    .alert__img{
+        display: none;
+    }
+
+    header img{
+        width: 73px;
+    }
+    
+}
